@@ -1,0 +1,9 @@
+@use "./variables" as v;
+.wrapper {
+    min-width: 100vw;
+    height: 100vh;
+
+    a {
+        color: v.$info-color;
+    }
+}
