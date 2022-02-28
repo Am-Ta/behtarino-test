@@ -16,7 +16,7 @@ export default function ListProductPage({ data }) {
         <Layout>
             <Row>
                 {data.map(item => {
-                    return <Col md={3} key={item.id}>
+                    return <Col sm={6} md={4} lg={3} key={item.id}>
                         <ProductCard title={item.title} src={item.image} id={item.id} />
                     </Col>
                 })}
