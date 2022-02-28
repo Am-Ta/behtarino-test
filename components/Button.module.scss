@@ -1,0 +1,15 @@
+@use "../styles/variables" as v;
+@use "../styles/mixins" as m;
+
+.bttn {
+  border: none;
+  background-color: transparent;
+  background-image: linear-gradient(
+    to top,
+    v.$primary-color,
+    v.$secondary-color
+  );
+  color: #fff;
+  border-radius: 0.5rem;
+  @include m.textSpacing(3px, 1px);
+}

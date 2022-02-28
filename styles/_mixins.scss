@@ -1,0 +1,5 @@
+
+@mixin textSpacing($word: 0px, $letter: "normal") {
+    letter-spacing: $letter;
+    word-spacing: $word;
+}

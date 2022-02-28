@@ -1,0 +1,36 @@
+@use "./mixins" as m;
+@use "./variables" as v;
+
+.product {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 1.5rem;
+
+  .product_title {
+    @include m.textSpacing(3px, 1px);
+    color: v.$dark-color;
+  }
+
+  h1.product_title {
+    font-size: 2rem;
+  }
+  h3.product_title {
+    font-size: 0.8rem;
+  }
+
+  .product_category {
+    color: v.$light-color;
+  }
+
+  .product_price {
+    color: v.$primary-color;
+    font-size: 1.5rem;
+  }
+
+  .product_description {
+    p {
+      color: v.$light-color;
+      line-height: 1.6;
+    }
+  }
+}
